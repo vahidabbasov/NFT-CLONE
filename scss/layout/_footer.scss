@@ -1,0 +1,313 @@
+body {
+    height: 100%;
+}
+
+.app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1 1 auto;
+}
+
+.app__footer {
+    background-color: $second-bg-color;
+    margin-top: 80px;
+    padding: 40px 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &__right {
+            width: 285px;
+
+            &__joinour {
+                font-family: "Work Sans", sans-serif;
+                padding-bottom: 20px;
+                font-size: 1rem;
+                color: #CCCCCC;
+                font-family: sans-serif;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 2px;
+            }
+
+            &__text {
+                padding: 20px 0 30px 0;
+                font-size: 1rem;
+                color: #CCCCCC;
+                font-family: sans-serif;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 2px;
+                font-family: "Work Sans", sans-serif;
+
+            }
+
+            &__icon {
+                display: flex;
+                justify-content: space-between;
+                width: 158px;
+
+                a {
+                    border-radius: 8px;
+                    transition: .6s;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: lightgrey;
+                        transition: .6s;
+                    }
+                }
+            }
+        }
+
+        &__middle {
+            padding-top: 5px;
+
+            h4 {
+                font-family: "Space Mono", sans-serif;
+                font-weight: 700;
+                color: white;
+                font-size: 1.4rem;
+                padding-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    padding-bottom: 30px;
+
+                    a {
+                        text-decoration: none;
+                        font-family: "Work Sans", sans-serif;
+                        font-size: 16px;
+                        color: #CCCCCC;
+                        font-weight: 400;
+                        transition: .4s;
+                    }
+
+                    &:hover {
+                        a {
+                            color: $purple;
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__left {
+            padding-top: 5px;
+            width: 420px;
+
+            h4 {
+                font-family: "Space Mono", sans-serif;
+                font-weight: 700;
+                color: white;
+                font-size: 1.4rem;
+                padding-bottom: 30px;
+            }
+
+            p {
+                font-family: "Work Sans", sans-serif;
+                font-size: 16px;
+                color: #CCCCCC;
+                font-weight: 400;
+                transition: .4s;
+                width: 330px;
+                line-height: 22px;
+            }
+
+            div {
+                background-color: white;
+                border-radius: 19px;
+                margin-top: 20px;
+                display: flex;
+
+                input {
+                    border: none;
+                    border-radius: 19px;
+                    width: 320px;
+
+                }
+
+                [placeholder~="email"] {
+                    padding: 0 10px;
+                    font-size: 1rem;
+                }
+
+                button {
+                    @include buttons($purple, 0, transparent, white);
+                    border-radius: 19px;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 33px;
+        border-top: 1px solid #858584;
+        height: 50px;
+
+        padding-top: 20px;
+
+        span {
+            color: #CCCCCC;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: "Work Sans";
+        }
+    }
+}
+
+
+@include for-size(tablet) {
+    .app__footer {
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+
+            &__right {
+                width: 100%;
+
+                p {
+                    font-size: 1.9rem;
+                    width: 100%;
+                }
+
+                &__text {
+                    padding: 20px 0 20px 0;
+
+                }
+            }
+
+            &__middle {
+                h4 {
+                    font-size: 3rem;
+                    margin-top: 30px;
+                }
+            }
+
+            &__left {
+                width: 100%;
+
+                h4 {
+                    font-size: 3rem;
+                    margin-top: 30px;
+                }
+
+                p {
+                    width: 100%;
+                }
+
+                div {
+                    width: 350px;
+
+                    [placeholder~="email"] {
+                        font-size: 1.5rem;
+                    }
+
+                    button {
+                        font-size: 1.8rem;
+                    }
+                }
+
+            }
+        }
+
+        &__bottom {
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@include for-size(mobile) {
+    .app__footer {
+        &__content {
+            display: flex;
+            flex-direction: column;
+
+
+            &__right {
+                width: 100%;
+
+                p {
+                    font-size: 1.9rem;
+                    width: 100%;
+                }
+
+                &__text {
+                    padding: 20px 0 20px 0;
+
+                }
+            }
+
+            &__middle {
+                h4 {
+                    font-size: 3rem;
+                    margin-top: 30px;
+                }
+            }
+
+            &__left {
+                width: 100%;
+
+                h4 {
+                    font-size: 3rem;
+                    margin-top: 30px;
+                }
+                p {
+                    width: 100%;
+                }
+
+                div {
+                    flex-direction: column;
+                    background: none;
+                    align-items: center;
+                    width: 100%;
+
+                    [placeholder~="email"] {
+                        font-size: 2.5rem;
+                        padding: 12px 102px 12px 20px;
+                        border-radius: 50px;
+                        width: -webkit-fill-available;
+                    }
+
+                    button {
+                        margin-top: 16px;
+                        font-size: 1.8rem;
+                        width: 100%;
+                        padding: 12px 102px;
+                        border-radius: 50px;
+
+                        img {
+                            display: flex;
+                            padding-right: 5px;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        &__bottom {
+            span {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

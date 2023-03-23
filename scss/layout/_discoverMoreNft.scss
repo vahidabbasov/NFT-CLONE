@@ -1,0 +1,225 @@
+#discoverMoreNft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .discover__header {
+        width: 1050px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+
+            h3 {
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 120%;
+                color: white;
+                font-family: 'Work Sans';
+                font-style: normal;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 22px;
+                margin-top: 10px;
+                line-height: 160%;
+                font-family: 'Work Sans';
+                font-style: normal;
+                color: white;
+                display: inline;
+            }
+
+        }
+
+        &__right {
+            align-items: flex-end;
+
+            button {
+                margin-top: 31px;
+
+                @include buttons (transparent, 2px, #A259FF, white, );
+
+                img {
+                    margin-right: 12px;
+
+                    transition: .6s;
+                }
+
+                &:hover {
+                    img {
+                        transform: scaleY(-1.4);
+                        transition: .6s;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .discover__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        cursor: pointer;
+        margin-top: 60px;
+
+        &__item {
+            width: 330px;
+            height: 462px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: .4s;
+
+            &__header {
+                width: 330px;
+                height: 296px;
+                transition: .4s;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: .4s;
+                }
+            }
+
+            &__footer {
+                background-color: #3B3B3B;
+                width: 330px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+
+                &__top {
+                    width: 270px;
+                    padding-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 30.8px;
+                        color: white;
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22.4px;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        color: white;
+                        margin-left: 10px;
+                    }
+                }
+
+                &__end {
+                    width: 270px;
+                    display: flex;
+                    margin-top: 25px;
+                    padding-bottom: 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    justify-content: space-between;
+
+                    &__left {
+
+                        h6 {
+                            font-family: 'Space Mono';
+                            font-family: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 110%;
+                            color: #858584;
+
+                        }
+
+                        p {
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 140%;
+                            color: white;
+                        }
+                    }
+
+                    &__right {
+
+                        h6 {
+                            font-family: 'Space Mono';
+                            font-family: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 110%;
+                            color: #858584;
+
+                        }
+
+                        p {
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 140%;
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover {
+                box-shadow: 0 0 20px #707070;
+                transition: .4s;
+            }
+        }
+    }
+
+    .discover__header__right--modifier {
+        display: none;
+
+        button {
+            display: none;
+        }
+    }
+}
+
+@include for-size(mobile) {
+    #discoverMoreNft {
+        .discover__header {
+            &__right {
+                display: none !important;
+
+                button {
+                    display: none !important;
+                }
+            }
+        }
+
+        .discover__header__right--modifier {
+            display: block !important;
+            width: 100%;
+
+            button {
+                width: 100%;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+    }
+}

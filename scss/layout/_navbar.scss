@@ -1,0 +1,102 @@
+body {
+    background-color: #2B2B2B;
+}
+
+header {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        &__left {
+            img {
+                cursor: pointer;
+
+            }
+        }
+
+        &__right {
+            display: flex;
+
+            &__content {
+                color: white;
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+
+                &__item {
+                    margin-left: 30px;
+                    transition: .4s;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        transition: .4s;
+                        font-family: "Work Sans", sans-serif;
+                        font-size: 1rem;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $purple;
+                            transition: .4s;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: .4s;
+
+                    }
+                }
+            }
+
+        }
+
+        button {
+            @include buttons($purple, 0, transparent, white); // width: 200px;
+            padding: 19px 30px !important;
+
+            &:hover {
+                img {
+                    transition: 4s;
+                }
+
+                background-color: #8e3cfa;
+            }
+
+            border-radius: 20px;
+
+            img {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .burger_menu {
+        display: none;
+    }
+
+}
+
+
+@include for-size(tablet) {
+    .navbar__right {
+        display: none !important;
+    }
+
+    .burger_menu {
+        display: block !important;
+        background-color: none;
+        cursor: pointer;
+
+        transition: .7s;
+
+        &:hover {
+            transition: .7s;
+            transform: scale(1.3);
+        }
+
+
+    }
+}

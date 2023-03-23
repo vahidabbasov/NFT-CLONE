@@ -1,0 +1,35 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+
+
+@include for-size(tablet) {
+
+    .container {
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    html {
+        font-size: 8px;
+    }
+}
+
+
+@include for-size(mobile){
+    .container {
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    html {
+        font-size: 6px;
+    }
+
+}

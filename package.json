@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "scripts": {
+    "sass": "node-sass scss/main.scss -o css -w"
+  }
+}

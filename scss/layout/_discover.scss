@@ -1,0 +1,229 @@
+body {
+    background-color: $bg-color;
+}
+
+.app__discover {
+    flex: 1 1 auto;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+
+    &__left {
+        width: 510px;
+
+        &__title {
+            font-size: 4.3rem;
+            font-weight: 600;
+            line-height: 73px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            line-height: 110%;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 35px;
+        }
+
+        button {
+            margin: 30px 0 30px 0;
+
+            @include buttons($purple, 0, transparent, white);
+
+            img {
+                padding-right: 12px;
+                transition: 3s;
+                width: 25px;
+            }
+
+            &:hover {
+                img {
+                    transform: translate(90px, -45px);
+                    transition: 4s;
+                }
+
+                background-color: #8e3cfa;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            font-family: "Space Mono", sans-serif;
+            color: white;
+
+            div {
+                width: 150px;
+            }
+
+            h6 {
+                font-weight: 600;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-weight: 400;
+                font-family: "Work Sans", sans-serif;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__right {
+        .app__discover__rightbuttons {
+            display: none;
+        }
+
+        &__content {
+            width: 510px;
+            border-radius: 20px;
+            background-color: $second-bg-color;
+
+
+            .app__discover__right__person {
+                padding: 22px 20px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    span {
+                        font-family: "Work Sans", sans-serif;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        padding-left: 12px;
+                    }
+
+                    img {
+                        border-radius: 50%;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+@include for-size(tablet) {
+    .app__discover {
+        &__left {
+            width: 308px;
+
+            p {
+                line-height: 22px;
+            }
+
+            button {
+                margin: 20px 0 20px 0;
+                padding: 14px 40px 14px 40px;
+            }
+        }
+
+        &__right {
+            &__content {
+                overflow: hidden;
+                width: 330px;
+                height: 312px;
+            }
+
+            img {
+                width: 330px;
+                height: 220px;
+                object-fit: cover;
+            }
+
+            .app__discover__right__person {
+                overflow: hidden;
+                padding: 20px 20px;
+
+                h6 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                div {
+
+                    span {
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+                }
+
+                img {
+                    width: 24px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
+
+@include for-size(mobile) {
+   
+    .app__discover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__left {
+            &__title {
+                margin-bottom: 10px;
+            }
+
+            &__text {
+                width: 315px;
+                font-size: 2.3rem;
+            }
+
+            &__bottom {
+                display: none;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        &__right {
+            &__content {
+                margin-top: 40px;
+            }
+
+            .app__discover__rightbuttons {
+                display: flex;
+                justify-content: center;
+                height: 50px;
+                margin-top: 40px;
+                @include buttons($purple, 0, transparent, white, 2rem);
+                width: 100%;
+
+                img {
+                    padding-right: 12px;
+                    transition: 3s;
+                    width: 30px;
+                    object-fit: contain;
+
+                }
+
+                &:hover {
+                    img {
+                        transform: translate(90px, -45px);
+                        transition: 4s;
+                    }
+
+                    background-color: #8e3cfa;
+                }
+            }
+        }
+    }
+}

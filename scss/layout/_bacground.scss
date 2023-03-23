@@ -1,0 +1,236 @@
+.mushroom {
+  background-image: url(/scss/image/NFTHighlight.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100%;
+  margin: 80px 0 80px 0;
+  position: relative;
+  padding-bottom: 60px;
+
+  .mushroom__content {
+
+    .mushroom__content__bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 390px 0 0 0;
+
+      &__left {
+        div {
+          padding: 11px 20px;
+          background-color: #3B3B3B;
+          border-radius: 20px;
+          width: fit-content;
+          color: white;
+          display: flex;
+          align-items: center;
+          font-weight: 400;
+          font-size: 16px;
+          font-family: "Work Sans",
+            sans-serif;
+          cursor: pointer;
+          transition: .5s;
+
+          img {
+            width: 24px;
+            margin-right: 12px;
+            transition: .5s;
+
+          }
+
+          &:hover {
+            background: #ec008c;
+            background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+            background: linear-gradient(to right, #fc6767, #ec008c);
+            transition: .5s;
+
+            img {
+              transform: scale(1.3);
+              transition: .5s;
+
+            }
+          }
+        }
+
+        h1 {
+          font-size: 50px;
+          color: white;
+          font-weight: 600;
+          font-family: "Work Sans",
+            sans-serif;
+          margin: 30px 0 30px 0;
+
+        }
+
+        button {
+          @include buttons(white, 0, transparent, black, 16px);
+          border-radius: 20px;
+
+          img {
+            margin-right: 12px;
+            transition: .6s;
+          }
+
+          &:hover {
+            img {
+              transform: scaleY(-1.4);
+              transition: .6s;
+            }
+          }
+        }
+      }
+    }
+
+    .seeNftrespons {
+      display: none;
+    }
+
+    .mushroom__content__bottom__right {
+      border-radius: 20px;
+      background-color: black;
+      opacity: 0.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 40px;
+      margin-top: 75px;
+      height: fit-content;
+      cursor: pointer;
+
+
+      &__content {
+        h5 {
+          color: white;
+          font-family: "Space Mono", sans-serif;
+          font-size: 12px;
+          width: fit-content;
+          margin-top: 10px;
+          font-weight: 400;
+          margin-bottom: 10px;
+
+        }
+
+        span {
+          color: white;
+          width: 100%;
+          text-align: center;
+          font-size: 38px;
+          font-weight: 700;
+          font-family: "Space Mono", sans-serif;
+        }
+
+        .time_dods {
+          padding: 0 10px;
+        }
+
+        p {
+          span {
+
+            color: white;
+            font-family: "Space Mono", sans-serif;
+            font-size: 12px;
+            width: fit-content;
+            margin-top: 10px;
+            font-weight: 400;
+          }
+
+          display: flex;
+          justify-content: space-between;
+        }
+
+      }
+
+    }
+  }
+}
+
+@include for-size(tablet) {
+  .mushroom {
+    background: url(/scss/image/NFTHighlightS.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    height: 630px;
+
+    &__content {
+
+
+      &__bottom {
+
+
+        padding: 340px 0 0 0 !important;
+
+        &__left {
+          h1 {
+            font-size: 38px !important;
+          }
+
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+        }
+
+        &__right {
+          margin-top: 130px !important;
+        }
+      }
+    }
+  }
+}
+
+@include for-size(mobile) {
+  .mushroom {
+    background: url(/scss/image/NFTHighlightMob.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    height: 590px;
+
+    .mushroom__content {
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 160px 0 0 0 !important;
+
+        &__left {
+          .seeNft {
+            display: none !important;
+          }
+
+          h1 {
+
+            font-size: 38px !important;
+
+          }
+
+        }
+
+        &__right {
+          margin: 0 !important;
+        }
+
+        .seeNftrespons {
+          margin-top: 20px;
+          display: block !important;
+          @include buttons(white, 0, transparent, black, 16px);
+          border-radius: 20px;
+
+          img {
+            margin-right: 12px;
+            transition: .6s;
+          }
+
+          &:hover {
+            img {
+              transform: scaleY(-1.4);
+              transition: .6s;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

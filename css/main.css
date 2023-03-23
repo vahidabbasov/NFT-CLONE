@@ -1,0 +1,1942 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none; }
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  border-radius: 0; }
+
+body {
+  box-sizing: border-box; }
+
+.container {
+  width: 1050px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 834px) {
+  .container {
+    width: 690px;
+    margin: 0 auto; }
+  html {
+    font-size: 8px; } }
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 310px;
+    margin: 0 auto; }
+  html {
+    font-size: 6px; } }
+
+body {
+  background-color: #2b2b2b; }
+
+#trendingCollection {
+  background-color: #2b2b2b; }
+  #trendingCollection .collection__header {
+    margin-top: 80px;
+    background-color: transparent; }
+    #trendingCollection .collection__header h3 {
+      font-weight: 600;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-size: 38px;
+      line-height: 45.6px;
+      color: white; }
+    #trendingCollection .collection__header p {
+      font-weight: 400;
+      font-family: 'Work Sans';
+      font-style: normal;
+      font-size: 22px;
+      line-height: 35.2px;
+      color: white; }
+  #trendingCollection .collection__cards {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b2b2b; }
+    #trendingCollection .collection__cards__left {
+      width: 330px;
+      height: 525px; }
+      #trendingCollection .collection__cards__left__header {
+        width: 330px;
+        height: 330px; }
+        #trendingCollection .collection__cards__left__header div {
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 20px; }
+          #trendingCollection .collection__cards__left__header div img {
+            margin: auto;
+            width: 100%;
+            transition: .4s; }
+          #trendingCollection .collection__cards__left__header div:hover img {
+            transform: scale(1.1);
+            transition: .4s; }
+      #trendingCollection .collection__cards__left__content {
+        display: flex;
+        margin-top: 15px;
+        width: 330px; }
+        #trendingCollection .collection__cards__left__content img {
+          margin-right: 15px;
+          cursor: pointer; }
+        #trendingCollection .collection__cards__left__content img:last-child {
+          border-radius: 20px; }
+        #trendingCollection .collection__cards__left__content div {
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 20px;
+          margin-right: 15px; }
+          #trendingCollection .collection__cards__left__content div img {
+            margin: auto;
+            width: 100%;
+            transition: .4s; }
+          #trendingCollection .collection__cards__left__content div:hover img {
+            transform: scale(1.1);
+            transition: .4s; }
+      #trendingCollection .collection__cards__left__footer {
+        width: 330px;
+        height: 65px;
+        margin-top: 15px; }
+        #trendingCollection .collection__cards__left__footer .collection__cards__left__footer__footer__element {
+          display: flex;
+          align-items: center; }
+        #trendingCollection .collection__cards__left__footer h5 {
+          font-weight: 600;
+          font-family: 'Work Sans';
+          font-style: normal;
+          font-size: 22px;
+          line-height: 30.8px;
+          color: white;
+          margin-bottom: 10px; }
+        #trendingCollection .collection__cards__left__footer img {
+          cursor: pointer; }
+        #trendingCollection .collection__cards__left__footer span {
+          font-family: 'Work Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22.4px;
+          color: white;
+          margin-left: 12px;
+          transition: .4s;
+          cursor: pointer; }
+          #trendingCollection .collection__cards__left__footer span:hover {
+            color: #A259FF;
+            transition: .4s; }
+    #trendingCollection .collection__cards__center {
+      width: 330px;
+      height: 525px; }
+      #trendingCollection .collection__cards__center__header {
+        width: 330px;
+        height: 330px; }
+        #trendingCollection .collection__cards__center__header img {
+          margin: auto;
+          width: 100%; }
+      #trendingCollection .collection__cards__center__content {
+        display: flex;
+        margin-top: 15px;
+        width: 330px; }
+        #trendingCollection .collection__cards__center__content img {
+          margin-right: 5px;
+          margin: auto; }
+        #trendingCollection .collection__cards__center__content img:last-child {
+          border-radius: 20px; }
+      #trendingCollection .collection__cards__center__footer {
+        width: 330px;
+        height: 65px;
+        margin-top: 15px; }
+        #trendingCollection .collection__cards__center__footer__element {
+          display: flex; }
+        #trendingCollection .collection__cards__center__footer h5 {
+          margin-left: 5px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 30.8px;
+          color: white; }
+        #trendingCollection .collection__cards__center__footer span {
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22.4px;
+          color: white; }
+    #trendingCollection .collection__cards__right {
+      width: 330px;
+      height: 525px; }
+      #trendingCollection .collection__cards__right__header {
+        width: 330px;
+        height: 330px; }
+        #trendingCollection .collection__cards__right__header img {
+          margin: auto;
+          width: 100%; }
+      #trendingCollection .collection__cards__right__content {
+        display: flex;
+        margin-top: 15px;
+        width: 330px; }
+        #trendingCollection .collection__cards__right__content img {
+          margin-right: 5px;
+          margin: auto; }
+        #trendingCollection .collection__cards__right__content img:last-child {
+          border-radius: 20px; }
+      #trendingCollection .collection__cards__right__footer {
+        width: 330px;
+        height: 65px;
+        margin-top: 15px; }
+        #trendingCollection .collection__cards__right__footer__element {
+          display: flex; }
+        #trendingCollection .collection__cards__right__footer h5 {
+          margin-left: 5px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 30.8px;
+          color: white; }
+        #trendingCollection .collection__cards__right__footer span {
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22.4px;
+          color: white; }
+
+@media screen and (max-width: 834px) {
+  #trendingCollection .collection__cards {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-top: 20px; }
+    #trendingCollection .collection__cards__left, #trendingCollection .collection__cards__center, #trendingCollection .collection__cards__right {
+      margin-top: 20px;
+      max-width: 310px; } }
+
+@media screen and (max-width: 375px) {
+  #trendingCollection .collection__cards__left__header, #trendingCollection .collection__cards__left__content, #trendingCollection .collection__cards__left__footer {
+    width: 315px !important; }
+  #trendingCollection .collection__cards__left__content {
+    justify-content: space-between; }
+    #trendingCollection .collection__cards__left__content div {
+      margin: 0 !important; } }
+
+#discoverMoreNft {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #discoverMoreNft .discover__header {
+    width: 1050px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between; }
+    #discoverMoreNft .discover__header__left h3 {
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      color: white;
+      font-family: 'Work Sans';
+      font-style: normal; }
+    #discoverMoreNft .discover__header__left p {
+      font-weight: 400;
+      font-size: 22px;
+      margin-top: 10px;
+      line-height: 160%;
+      font-family: 'Work Sans';
+      font-style: normal;
+      color: white;
+      display: inline; }
+    #discoverMoreNft .discover__header__right {
+      align-items: flex-end; }
+      #discoverMoreNft .discover__header__right button {
+        margin-top: 31px;
+        padding: 19px 50px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid #A259FF;
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .6s;
+        font-size: 1rem; }
+        #discoverMoreNft .discover__header__right button:hover {
+          transform: scale(1.1);
+          transition: .6s; }
+        #discoverMoreNft .discover__header__right button img {
+          margin-right: 12px;
+          transition: .6s; }
+        #discoverMoreNft .discover__header__right button:hover img {
+          transform: scaleY(-1.4);
+          transition: .6s; }
+  #discoverMoreNft .discover__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 60px; }
+    #discoverMoreNft .discover__cards__item {
+      width: 330px;
+      height: 462px;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: .4s; }
+      #discoverMoreNft .discover__cards__item__header {
+        width: 330px;
+        height: 296px;
+        transition: .4s;
+        overflow: hidden; }
+        #discoverMoreNft .discover__cards__item__header:hover {
+          transform: scale(1.1);
+          transition: .4s; }
+      #discoverMoreNft .discover__cards__item__footer {
+        background-color: #3B3B3B;
+        width: 330px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
+        #discoverMoreNft .discover__cards__item__footer__top {
+          width: 270px;
+          padding-top: 20px;
+          margin-left: auto;
+          margin-right: auto; }
+          #discoverMoreNft .discover__cards__item__footer__top div {
+            display: flex;
+            align-items: center; }
+          #discoverMoreNft .discover__cards__item__footer__top h5 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30.8px;
+            color: white;
+            font-family: 'Work Sans';
+            font-style: normal;
+            margin-bottom: 10px; }
+          #discoverMoreNft .discover__cards__item__footer__top span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            color: white;
+            margin-left: 10px; }
+        #discoverMoreNft .discover__cards__item__footer__end {
+          width: 270px;
+          display: flex;
+          margin-top: 25px;
+          padding-bottom: 25px;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: space-between; }
+          #discoverMoreNft .discover__cards__item__footer__end__left h6 {
+            font-family: 'Space Mono';
+            font-family: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 110%;
+            color: #858584; }
+          #discoverMoreNft .discover__cards__item__footer__end__left p {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: white; }
+          #discoverMoreNft .discover__cards__item__footer__end__right h6 {
+            font-family: 'Space Mono';
+            font-family: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 110%;
+            color: #858584; }
+          #discoverMoreNft .discover__cards__item__footer__end__right p {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: white; }
+      #discoverMoreNft .discover__cards__item:hover {
+        box-shadow: 0 0 20px #707070;
+        transition: .4s; }
+  #discoverMoreNft .discover__header__right--modifier {
+    display: none; }
+    #discoverMoreNft .discover__header__right--modifier button {
+      display: none; }
+
+@media screen and (max-width: 375px) {
+  #discoverMoreNft .discover__header__right {
+    display: none !important; }
+    #discoverMoreNft .discover__header__right button {
+      display: none !important; }
+  #discoverMoreNft .discover__header__right--modifier {
+    display: block !important;
+    width: 100%; }
+    #discoverMoreNft .discover__header__right--modifier button {
+      width: 100%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center; } }
+
+body {
+  background-color: #2B2B2B; }
+
+#process {
+  margin-top: 80px; }
+  #process h3 {
+    font-size: 38px;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    margin-bottom: 10px; }
+  #process p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 48px; }
+  #process .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #process .cards .card {
+      width: 330px;
+      height: 439px;
+      background: #3B3B3B;
+      border-radius: 20px;
+      transition: .4s;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      #process .cards .card .image {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      #process .cards .card h4 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+        font-family: "Work Sans", sans-serif; }
+      #process .cards .card .text {
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin: 0 auto;
+        text-align: center;
+        width: 270px;
+        line-height: 22px; }
+      #process .cards .card:hover {
+        box-shadow: 0 0 20px #707070;
+        transition: .4s; }
+
+#weekly {
+  display: flex;
+  margin-top: 120px; }
+  #weekly .card5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    gap: 30; }
+    #weekly .card5 .photo {
+      width: 425px;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: .6s; }
+      #weekly .card5 .photo img {
+        width: 425px;
+        transition: .6s; }
+      #weekly .card5 .photo:hover {
+        box-shadow: 0 0 30px #A259FF;
+        transition: .6s; }
+        #weekly .card5 .photo:hover img {
+          transform: scale(1.1);
+          transition: .6s; }
+    #weekly .card5 .text {
+      width: 425px; }
+      #weekly .card5 .text h3 {
+        font-weight: 600;
+        font-family: "Work Sans", sans-serif;
+        font-size: 38px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        line-height: 45px; }
+      #weekly .card5 .text p {
+        font-weight: 400;
+        font-size: 22px;
+        font-family: "Work Sans", sans-serif;
+        color: #FFFFFF;
+        line-height: 35px;
+        margin-bottom: 40px; }
+      #weekly .card5 .text .btn {
+        padding-top: 5px;
+        width: 420px; }
+        #weekly .card5 .text .btn h4 {
+          font-family: "Space Mono", sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 1.4rem;
+          padding-bottom: 30px; }
+        #weekly .card5 .text .btn p {
+          font-family: "Work Sans", sans-serif;
+          font-size: 16px;
+          color: #CCCCCC;
+          font-weight: 400;
+          transition: .4s;
+          width: 330px;
+          line-height: 22px; }
+        #weekly .card5 .text .btn div {
+          background-color: white;
+          border-radius: 19px;
+          margin-top: 20px;
+          display: flex; }
+          #weekly .card5 .text .btn div input {
+            border: none;
+            border-radius: 19px;
+            width: 320px; }
+          #weekly .card5 .text .btn div [placeholder~="email"] {
+            padding: 0 10px;
+            font-size: 1rem; }
+          #weekly .card5 .text .btn div button {
+            padding: 19px 50px;
+            border-radius: 20px;
+            background-color: #A259FF;
+            border: 0 solid transparent;
+            color: white;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            transition: .6s;
+            font-size: 1rem;
+            border-radius: 19px;
+            display: flex;
+            justify-content: center; }
+            #weekly .card5 .text .btn div button:hover {
+              transform: scale(1.1);
+              transition: .6s; }
+            #weekly .card5 .text .btn div button img {
+              display: none; }
+
+@media screen and (max-width: 834px) {
+  #process .cards .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 210px !important;
+    height: 320px !important; }
+    #process .cards .card .image {
+      width: 133px !important; }
+      #process .cards .card .image img {
+        width: 133px; }
+    #process .cards .card h4 {
+      font-size: 16px !important; }
+    #process .cards .card .text {
+      font-size: 12px !important;
+      width: 170px !important; }
+  #weekly .card5 {
+    align-items: center !important;
+    justify-content: center; }
+    #weekly .card5 .photo {
+      width: 300px !important;
+      height: 280px !important;
+      margin-right: 30px; }
+      #weekly .card5 .photo img {
+        width: 300px !important;
+        height: 280px !important;
+        object-fit: fill;
+        transition: .6s; }
+    #weekly .card5 .text {
+      width: 300px; }
+      #weekly .card5 .text h3 {
+        font-size: 28px !important; }
+      #weekly .card5 .text p {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        margin-bottom: 30px; }
+      #weekly .card5 .text .btn {
+        padding-top: 5px;
+        width: 100%; }
+        #weekly .card5 .text .btn div {
+          margin: 0 !important;
+          background: none;
+          border-radius: 19px;
+          display: flex;
+          flex-direction: column !important; }
+          #weekly .card5 .text .btn div input {
+            width: fit-content !important;
+            margin-bottom: 16px; }
+          #weekly .card5 .text .btn div [placeholder~="email"] {
+            padding: 12px 80px 12px 14px !important;
+            font-size: 16px; }
+          #weekly .card5 .text .btn div button {
+            padding: 12px 94px;
+            font-size: 16px; } }
+
+@media screen and (max-width: 375px) {
+  #process .cards {
+    justify-content: center; }
+    #process .cards .card {
+      width: 315px !important;
+      height: 157px !important; }
+      #process .cards .card .image {
+        width: 83px; }
+        #process .cards .card .image img {
+          width: 83px; }
+      #process .cards .card .content-text {
+        text-align: start !important; }
+        #process .cards .card .content-text h4 {
+          margin-top: 20px;
+          margin-right: 25px; }
+        #process .cards .card .content-text .text {
+          text-align: start !important;
+          line-height: 16.8px; }
+  #weekly {
+    margin-top: 60px !important; }
+    #weekly .card5 {
+      display: block;
+      padding: 0 !important;
+      background: none; } }
+
+#browseCategories {
+  margin-top: 80px; }
+  #browseCategories .browseCategories__title {
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 60px; }
+  #browseCategories .browseCategories__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    flex-wrap: wrap; }
+    #browseCategories .browseCategories__cards__card {
+      background-color: #3B3B3B;
+      border-radius: 25px;
+      width: 240px;
+      height: 316px;
+      cursor: pointer;
+      transition: .4s; }
+      #browseCategories .browseCategories__cards__card__top {
+        position: relative; }
+        #browseCategories .browseCategories__cards__card__top img:last-child {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100px; }
+      #browseCategories .browseCategories__cards__card__bottom {
+        padding: 20px 30px 25px 30px; }
+        #browseCategories .browseCategories__cards__card__bottom h5 {
+          font-size: 22px;
+          color: white;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 600; }
+      #browseCategories .browseCategories__cards__card:hover {
+        box-shadow: 0 0 20px #707070;
+        transition: .4s; }
+
+@media screen and (max-width: 834px) {
+  #browseCategories .browseCategories__cards {
+    display: flex;
+    justify-content: center !important; } }
+
+@media screen and (max-width: 375px) {
+  #browseCategories .browseCategories__cards {
+    display: flex !important;
+    justify-content: center !important; } }
+
+.mushroom {
+  background-image: url(/scss/image/NFTHighlight.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 100%;
+  margin: 80px 0 80px 0;
+  position: relative;
+  padding-bottom: 60px; }
+  .mushroom .mushroom__content .mushroom__content__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 390px 0 0 0; }
+    .mushroom .mushroom__content .mushroom__content__bottom__left div {
+      padding: 11px 20px;
+      background-color: #3B3B3B;
+      border-radius: 20px;
+      width: fit-content;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: "Work Sans", sans-serif;
+      cursor: pointer;
+      transition: .5s; }
+      .mushroom .mushroom__content .mushroom__content__bottom__left div img {
+        width: 24px;
+        margin-right: 12px;
+        transition: .5s; }
+      .mushroom .mushroom__content .mushroom__content__bottom__left div:hover {
+        background: #ec008c;
+        background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+        background: linear-gradient(to right, #fc6767, #ec008c);
+        transition: .5s; }
+        .mushroom .mushroom__content .mushroom__content__bottom__left div:hover img {
+          transform: scale(1.3);
+          transition: .5s; }
+    .mushroom .mushroom__content .mushroom__content__bottom__left h1 {
+      font-size: 50px;
+      color: white;
+      font-weight: 600;
+      font-family: "Work Sans", sans-serif;
+      margin: 30px 0 30px 0; }
+    .mushroom .mushroom__content .mushroom__content__bottom__left button {
+      padding: 19px 50px;
+      border-radius: 20px;
+      background-color: white;
+      border: 0 solid transparent;
+      color: black;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: .6s;
+      font-size: 16px;
+      border-radius: 20px; }
+      .mushroom .mushroom__content .mushroom__content__bottom__left button:hover {
+        transform: scale(1.1);
+        transition: .6s; }
+      .mushroom .mushroom__content .mushroom__content__bottom__left button img {
+        margin-right: 12px;
+        transition: .6s; }
+      .mushroom .mushroom__content .mushroom__content__bottom__left button:hover img {
+        transform: scaleY(-1.4);
+        transition: .6s; }
+  .mushroom .mushroom__content .seeNftrespons {
+    display: none; }
+  .mushroom .mushroom__content .mushroom__content__bottom__right {
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px;
+    margin-top: 75px;
+    height: fit-content;
+    cursor: pointer; }
+    .mushroom .mushroom__content .mushroom__content__bottom__right__content h5 {
+      color: white;
+      font-family: "Space Mono", sans-serif;
+      font-size: 12px;
+      width: fit-content;
+      margin-top: 10px;
+      font-weight: 400;
+      margin-bottom: 10px; }
+    .mushroom .mushroom__content .mushroom__content__bottom__right__content span {
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 38px;
+      font-weight: 700;
+      font-family: "Space Mono", sans-serif; }
+    .mushroom .mushroom__content .mushroom__content__bottom__right__content .time_dods {
+      padding: 0 10px; }
+    .mushroom .mushroom__content .mushroom__content__bottom__right__content p {
+      display: flex;
+      justify-content: space-between; }
+      .mushroom .mushroom__content .mushroom__content__bottom__right__content p span {
+        color: white;
+        font-family: "Space Mono", sans-serif;
+        font-size: 12px;
+        width: fit-content;
+        margin-top: 10px;
+        font-weight: 400; }
+
+@media screen and (max-width: 834px) {
+  .mushroom {
+    background: url(/scss/image/NFTHighlightS.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    height: 630px; }
+    .mushroom__content__bottom {
+      padding: 340px 0 0 0 !important; }
+      .mushroom__content__bottom__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: end; }
+        .mushroom__content__bottom__left h1 {
+          font-size: 38px !important; }
+      .mushroom__content__bottom__right {
+        margin-top: 130px !important; } }
+
+@media screen and (max-width: 375px) {
+  .mushroom {
+    background: url(/scss/image/NFTHighlightMob.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    height: 590px; }
+    .mushroom .mushroom__content__bottom {
+      display: flex;
+      flex-direction: column;
+      padding: 160px 0 0 0 !important; }
+      .mushroom .mushroom__content__bottom__left .seeNft {
+        display: none !important; }
+      .mushroom .mushroom__content__bottom__left h1 {
+        font-size: 38px !important; }
+      .mushroom .mushroom__content__bottom__right {
+        margin: 0 !important; }
+      .mushroom .mushroom__content__bottom .seeNftrespons {
+        margin-top: 20px;
+        display: block !important;
+        padding: 19px 50px;
+        border-radius: 20px;
+        background-color: white;
+        border: 0 solid transparent;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .6s;
+        font-size: 16px;
+        border-radius: 20px; }
+        .mushroom .mushroom__content__bottom .seeNftrespons:hover {
+          transform: scale(1.1);
+          transition: .6s; }
+        .mushroom .mushroom__content__bottom .seeNftrespons img {
+          margin-right: 12px;
+          transition: .6s; }
+        .mushroom .mushroom__content__bottom .seeNftrespons:hover img {
+          transform: scaleY(-1.4);
+          transition: .6s; } }
+
+.topCreators .topCreators__header {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between; }
+  .topCreators .topCreators__header__left h3 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: white;
+    font-family: 'Work Sans';
+    font-style: normal;
+    margin-bottom: 10px; }
+  .topCreators .topCreators__header__left p {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 10px;
+    line-height: 160%;
+    font-family: 'Work Sans';
+    font-style: normal;
+    color: white;
+    display: inline; }
+  .topCreators .topCreators__header__right {
+    align-items: flex-end; }
+    .topCreators .topCreators__header__right button {
+      margin-top: 31px;
+      padding: 19px 50px !important;
+      border-radius: 20px !important;
+      padding: 19px 50px;
+      border-radius: 20px;
+      background-color: transparent;
+      border: 2px solid #A259FF;
+      color: white;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: .6s;
+      font-size: 1rem; }
+      .topCreators .topCreators__header__right button:hover {
+        transform: scale(1.1);
+        transition: .6s; }
+      .topCreators .topCreators__header__right button img {
+        margin-right: 12px;
+        transition: 4s; }
+      .topCreators .topCreators__header__right button:hover img {
+        transform: translate(90px, -45px);
+        transition: 4s; }
+
+.topCreators .resp__button {
+  display: none !important; }
+  .topCreators .resp__button button {
+    display: none !important; }
+
+.topCreators .cardV1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 60px; }
+  .topCreators .cardV1 .card {
+    background-color: #3b3b3b;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 240px;
+    height: 238px;
+    transition: 0.4s;
+    position: relative; }
+    .topCreators .cardV1 .card .card__content__top {
+      display: flex;
+      justify-content: center;
+      padding: 20px 65px 0 65px;
+      margin-bottom: 20px; }
+    .topCreators .cardV1 .card .card__content__bottom {
+      text-align: center;
+      padding: 0 20px 0 20px; }
+      .topCreators .cardV1 .card .card__content__bottom h4 {
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 600; }
+      .topCreators .cardV1 .card .card__content__bottom div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px; }
+        .topCreators .cardV1 .card .card__content__bottom div p {
+          color: #9b9898;
+          font-size: 16px;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400; }
+        .topCreators .cardV1 .card .card__content__bottom div h3 {
+          color: white;
+          font-weight: 400;
+          font-family: 'Space Mono', sans-serif; }
+    .topCreators .cardV1 .card .card__number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #2B2B2B;
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .topCreators .cardV1 .card .card__number span {
+        color: #858584; }
+    .topCreators .cardV1 .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #707070;
+      transition: 0.4s; }
+
+@media screen and (max-width: 834px) {
+  .cardV1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px; }
+    .cardV1 .card {
+      width: 330px !important;
+      height: 100px !important;
+      display: flex;
+      align-items: center; }
+      .cardV1 .card .card__content__top {
+        display: flex;
+        margin-bottom: 0 !important;
+        padding: 0 20px !important; }
+        .cardV1 .card .card__content__top img {
+          width: 60px; }
+      .cardV1 .card .card__number {
+        top: 15px !important;
+        left: 10px !important; }
+        .cardV1 .card .card__number span {
+          font-size: 16px; }
+      .cardV1 .card .card__content__bottom {
+        text-align: start !important;
+        padding: 0 !important; }
+        .cardV1 .card .card__content__bottom div {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px; }
+          .cardV1 .card .card__content__bottom div h3 {
+            font-size: 16px;
+            margin-left: 10px; } }
+
+@media screen and (max-width: 375px) {
+  .topCreators .cardV1 .card {
+    width: 315px !important; }
+  .topCreators .topCreators__header__left h3 {
+    font-size: 28px; }
+  .topCreators .topCreators__header__left p {
+    font-size: 16px; }
+  .topCreators .topCreators__header .cardV1 .card {
+    width: 315px !important; }
+  .topCreators .topCreators__header__right {
+    display: none !important; }
+  .topCreators .resp__button {
+    display: block !important;
+    width: 100%;
+    margin-top: 30px;
+    padding: 19px 50px !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 19px 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #A259FF;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .6s;
+    font-size: 1rem; }
+    .topCreators .resp__button:hover {
+      transform: scale(1.1);
+      transition: .6s; }
+    .topCreators .resp__button img {
+      margin-right: 12px;
+      transition: 4s; }
+    .topCreators .resp__button span {
+      font-size: 16px; }
+    .topCreators .resp__button:hover img {
+      transform: translate(90px, -45px);
+      transition: 4s; } }
+
+body {
+  background-color: #2B2B2B; }
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; }
+  header .navbar__left img {
+    cursor: pointer; }
+  header .navbar__right {
+    display: flex; }
+    header .navbar__right__content {
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-right: 30px; }
+      header .navbar__right__content__item {
+        margin-left: 30px;
+        transition: .4s; }
+        header .navbar__right__content__item a {
+          color: white;
+          text-decoration: none;
+          transition: .4s;
+          font-family: "Work Sans", sans-serif;
+          font-size: 1rem;
+          font-weight: 600; }
+          header .navbar__right__content__item a:hover {
+            color: #A259FF;
+            transition: .4s; }
+        header .navbar__right__content__item:hover {
+          transform: scale(1.1);
+          transition: .4s; }
+  header .navbar button {
+    padding: 19px 50px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    border: 0 solid transparent;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .6s;
+    font-size: 1rem;
+    padding: 19px 30px !important;
+    border-radius: 20px; }
+    header .navbar button:hover {
+      transform: scale(1.1);
+      transition: .6s; }
+    header .navbar button:hover {
+      background-color: #8e3cfa; }
+      header .navbar button:hover img {
+        transition: 4s; }
+    header .navbar button img {
+      margin-right: 15px; }
+
+header .burger_menu {
+  display: none; }
+
+@media screen and (max-width: 834px) {
+  .navbar__right {
+    display: none !important; }
+  .burger_menu {
+    display: block !important;
+    background-color: none;
+    cursor: pointer;
+    transition: .7s; }
+    .burger_menu:hover {
+      transition: .7s;
+      transform: scale(1.3); } }
+
+body {
+  height: 100%; }
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+body {
+  flex: 1 1 auto; }
+
+.app__footer {
+  background-color: #3B3B3B;
+  margin-top: 80px;
+  padding: 40px 0; }
+  .app__footer__content {
+    display: flex;
+    justify-content: space-between; }
+    .app__footer__content__right {
+      width: 285px; }
+      .app__footer__content__right__joinour {
+        font-family: "Work Sans", sans-serif;
+        padding-bottom: 20px;
+        font-size: 1rem;
+        color: #CCCCCC;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 2px; }
+      .app__footer__content__right__text {
+        padding: 20px 0 30px 0;
+        font-size: 1rem;
+        color: #CCCCCC;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 2px;
+        font-family: "Work Sans", sans-serif; }
+      .app__footer__content__right__icon {
+        display: flex;
+        justify-content: space-between;
+        width: 158px; }
+        .app__footer__content__right__icon a {
+          border-radius: 8px;
+          transition: .6s;
+          display: flex;
+          align-items: center; }
+          .app__footer__content__right__icon a:hover {
+            background-color: lightgrey;
+            transition: .6s; }
+    .app__footer__content__middle {
+      padding-top: 5px; }
+      .app__footer__content__middle h4 {
+        font-family: "Space Mono", sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 1.4rem;
+        padding-bottom: 30px; }
+      .app__footer__content__middle ul li {
+        padding-bottom: 30px; }
+        .app__footer__content__middle ul li a {
+          text-decoration: none;
+          font-family: "Work Sans", sans-serif;
+          font-size: 16px;
+          color: #CCCCCC;
+          font-weight: 400;
+          transition: .4s; }
+        .app__footer__content__middle ul li:hover a {
+          color: #A259FF;
+          transition: .4s; }
+    .app__footer__content__left {
+      padding-top: 5px;
+      width: 420px; }
+      .app__footer__content__left h4 {
+        font-family: "Space Mono", sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 1.4rem;
+        padding-bottom: 30px; }
+      .app__footer__content__left p {
+        font-family: "Work Sans", sans-serif;
+        font-size: 16px;
+        color: #CCCCCC;
+        font-weight: 400;
+        transition: .4s;
+        width: 330px;
+        line-height: 22px; }
+      .app__footer__content__left div {
+        background-color: white;
+        border-radius: 19px;
+        margin-top: 20px;
+        display: flex; }
+        .app__footer__content__left div input {
+          border: none;
+          border-radius: 19px;
+          width: 320px; }
+        .app__footer__content__left div [placeholder~="email"] {
+          padding: 0 10px;
+          font-size: 1rem; }
+        .app__footer__content__left div button {
+          padding: 19px 50px;
+          border-radius: 20px;
+          background-color: #A259FF;
+          border: 0 solid transparent;
+          color: white;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          overflow: hidden;
+          transition: .6s;
+          font-size: 1rem;
+          border-radius: 19px;
+          display: flex;
+          justify-content: center; }
+          .app__footer__content__left div button:hover {
+            transform: scale(1.1);
+            transition: .6s; }
+          .app__footer__content__left div button img {
+            display: none; }
+  .app__footer__bottom {
+    margin-top: 33px;
+    border-top: 1px solid #858584;
+    height: 50px;
+    padding-top: 20px; }
+    .app__footer__bottom span {
+      color: #CCCCCC;
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-family: "Work Sans"; }
+
+@media screen and (max-width: 834px) {
+  .app__footer__content {
+    display: flex;
+    flex-direction: column; }
+    .app__footer__content__right {
+      width: 100%; }
+      .app__footer__content__right p {
+        font-size: 1.9rem;
+        width: 100%; }
+      .app__footer__content__right__text {
+        padding: 20px 0 20px 0; }
+    .app__footer__content__middle h4 {
+      font-size: 3rem;
+      margin-top: 30px; }
+    .app__footer__content__left {
+      width: 100%; }
+      .app__footer__content__left h4 {
+        font-size: 3rem;
+        margin-top: 30px; }
+      .app__footer__content__left p {
+        width: 100%; }
+      .app__footer__content__left div {
+        width: 350px; }
+        .app__footer__content__left div [placeholder~="email"] {
+          font-size: 1.5rem; }
+        .app__footer__content__left div button {
+          font-size: 1.8rem; }
+  .app__footer__bottom span {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 375px) {
+  .app__footer__content {
+    display: flex;
+    flex-direction: column; }
+    .app__footer__content__right {
+      width: 100%; }
+      .app__footer__content__right p {
+        font-size: 1.9rem;
+        width: 100%; }
+      .app__footer__content__right__text {
+        padding: 20px 0 20px 0; }
+    .app__footer__content__middle h4 {
+      font-size: 3rem;
+      margin-top: 30px; }
+    .app__footer__content__left {
+      width: 100%; }
+      .app__footer__content__left h4 {
+        font-size: 3rem;
+        margin-top: 30px; }
+      .app__footer__content__left p {
+        width: 100%; }
+      .app__footer__content__left div {
+        flex-direction: column;
+        background: none;
+        align-items: center;
+        width: 100%; }
+        .app__footer__content__left div [placeholder~="email"] {
+          font-size: 2.5rem;
+          padding: 12px 102px 12px 20px;
+          border-radius: 50px;
+          width: -webkit-fill-available; }
+        .app__footer__content__left div button {
+          margin-top: 16px;
+          font-size: 1.8rem;
+          width: 100%;
+          padding: 12px 102px;
+          border-radius: 50px; }
+          .app__footer__content__left div button img {
+            display: flex;
+            padding-right: 5px; }
+  .app__footer__bottom span {
+    font-size: 1.8rem; } }
+
+body {
+  background-color: #2B2B2B; }
+
+.app__discover {
+  flex: 1 1 auto;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Work Sans", sans-serif;
+  color: white; }
+  .app__discover__left {
+    width: 510px; }
+    .app__discover__left__title {
+      font-size: 4.3rem;
+      font-weight: 600;
+      line-height: 73px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      line-height: 110%; }
+    .app__discover__left__text {
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 35px; }
+    .app__discover__left button {
+      margin: 30px 0 30px 0;
+      padding: 19px 50px;
+      border-radius: 20px;
+      background-color: #A259FF;
+      border: 0 solid transparent;
+      color: white;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: .6s;
+      font-size: 1rem; }
+      .app__discover__left button:hover {
+        transform: scale(1.1);
+        transition: .6s; }
+      .app__discover__left button img {
+        padding-right: 12px;
+        transition: 3s;
+        width: 25px; }
+      .app__discover__left button:hover {
+        background-color: #8e3cfa; }
+        .app__discover__left button:hover img {
+          transform: translate(90px, -45px);
+          transition: 4s; }
+    .app__discover__left__bottom {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Space Mono", sans-serif;
+      color: white; }
+      .app__discover__left__bottom div {
+        width: 150px; }
+      .app__discover__left__bottom h6 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 10px; }
+      .app__discover__left__bottom span {
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.2rem; }
+  .app__discover__right .app__discover__rightbuttons {
+    display: none; }
+  .app__discover__right__content {
+    width: 510px;
+    border-radius: 20px;
+    background-color: #3B3B3B; }
+    .app__discover__right__content .app__discover__right__person {
+      padding: 22px 20px; }
+      .app__discover__right__content .app__discover__right__person div {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; }
+        .app__discover__right__content .app__discover__right__person div span {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+          padding-left: 12px; }
+        .app__discover__right__content .app__discover__right__person div img {
+          border-radius: 50%;
+          width: 24px; }
+
+@media screen and (max-width: 834px) {
+  .app__discover__left {
+    width: 308px; }
+    .app__discover__left p {
+      line-height: 22px; }
+    .app__discover__left button {
+      margin: 20px 0 20px 0;
+      padding: 14px 40px 14px 40px; }
+  .app__discover__right__content {
+    overflow: hidden;
+    width: 330px;
+    height: 312px; }
+  .app__discover__right img {
+    width: 330px;
+    height: 220px;
+    object-fit: cover; }
+  .app__discover__right .app__discover__right__person {
+    overflow: hidden;
+    padding: 20px 20px; }
+    .app__discover__right .app__discover__right__person h6 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .app__discover__right .app__discover__right__person div span {
+      font-size: 2rem;
+      font-weight: 400; }
+    .app__discover__right .app__discover__right__person img {
+      width: 24px;
+      height: auto; } }
+
+@media screen and (max-width: 375px) {
+  .app__discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .app__discover__left__title {
+      margin-bottom: 10px; }
+    .app__discover__left__text {
+      width: 315px;
+      font-size: 2.3rem; }
+    .app__discover__left__bottom {
+      display: none; }
+    .app__discover__left button {
+      display: none; }
+    .app__discover__right__content {
+      margin-top: 40px; }
+    .app__discover__right .app__discover__rightbuttons {
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      margin-top: 40px;
+      padding: 19px 50px;
+      border-radius: 20px;
+      background-color: #A259FF;
+      border: 0 solid transparent;
+      color: white;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: .6s;
+      font-size: 2rem;
+      width: 100%; }
+      .app__discover__right .app__discover__rightbuttons:hover {
+        transform: scale(1.1);
+        transition: .6s; }
+      .app__discover__right .app__discover__rightbuttons img {
+        padding-right: 12px;
+        transition: 3s;
+        width: 30px;
+        object-fit: contain; }
+      .app__discover__right .app__discover__rightbuttons:hover {
+        background-color: #8e3cfa; }
+        .app__discover__right .app__discover__rightbuttons:hover img {
+          transform: translate(90px, -45px);
+          transition: 4s; } }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  cursor: pointer; }
+  .cards__item {
+    width: 330px;
+    height: 462px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s; }
+    .cards__item__header {
+      width: 330px;
+      height: 296px;
+      transition: .4s; }
+      .cards__item__header:hover {
+        transform: scale(1.1);
+        transition: .4s; }
+    .cards__item__footer {
+      background-color: #3B3B3B;
+      width: 330px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px; }
+      .cards__item__footer__top {
+        width: 270px;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto; }
+        .cards__item__footer__top div {
+          display: flex;
+          align-items: center; }
+        .cards__item__footer__top h5 {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 30.8px;
+          color: white;
+          font-family: 'Work Sans';
+          font-style: normal;
+          margin-bottom: 5px; }
+        .cards__item__footer__top span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22.4px;
+          font-family: 'Space Mono';
+          font-style: normal;
+          color: white;
+          margin-left: 10px; }
+      .cards__item__footer__end {
+        width: 270px;
+        display: flex;
+        margin-top: 25px;
+        padding-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between; }
+        .cards__item__footer__end__left h6 {
+          font-family: 'Space Mono';
+          font-family: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 110%;
+          color: #858584;
+          margin-bottom: 8px; }
+        .cards__item__footer__end__left p {
+          font-family: 'Space Mono';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: white; }
+        .cards__item__footer__end__right h6 {
+          font-family: 'Space Mono';
+          font-family: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 110%;
+          color: #858584;
+          margin-bottom: 8px; }
+        .cards__item__footer__end__right p {
+          font-family: 'Space Mono';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: white; }
+    .cards__item:hover {
+      box-shadow: 0 0 20px #707070;
+      transition: .4s; }
+
+@media screen and (max-width: 375px) {
+  #artistCards .cards {
+    display: flex;
+    justify-content: center; }
+    #artistCards .cards__item {
+      width: 315px; } }
+
+.app .app__profile__top {
+  width: 100%; }
+  .app .app__profile__top img {
+    width: 100%; }
+  .app .app__profile__top .app__profile__top__respimg {
+    display: none; }
+
+.app .app__profile__bottom .app__profile__bottom__avatar {
+  transform: translateY(-50%); }
+
+.app .app__profile__bottom__content__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .app .app__profile__bottom__content__top h1 {
+    font-size: 3.2rem;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600; }
+  .app .app__profile__bottom__content__top div {
+    display: flex; }
+    .app .app__profile__bottom__content__top div button {
+      margin-right: 20px;
+      border-radius: 20px !important;
+      height: fit-content;
+      padding: 19px 21px !important; }
+      .app .app__profile__bottom__content__top div button:first-child {
+        padding: 19px 50px;
+        border-radius: 20px;
+        background-color: #A259FF;
+        border: 0 solid transparent;
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .6s;
+        font-size: 1rem; }
+        .app .app__profile__bottom__content__top div button:first-child:hover {
+          transform: scale(1.1);
+          transition: .6s; }
+      .app .app__profile__bottom__content__top div button:last-child {
+        padding: 19px 50px;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid #A259FF;
+        color: white;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .6s;
+        font-size: 1rem; }
+        .app .app__profile__bottom__content__top div button:last-child:hover {
+          transform: scale(1.1);
+          transition: .6s; }
+      .app .app__profile__bottom__content__top div button img {
+        padding-right: 10px; }
+
+.app .app__profile__bottom__content__left {
+  width: 599px;
+  font-size: 1.4rem; }
+  .app .app__profile__bottom__content__left__boxes {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Space Mono", sans-serif;
+    color: white;
+    margin-top: 30px;
+    width: 510px;
+    margin-bottom: 30px; }
+    .app .app__profile__bottom__content__left__boxes div {
+      width: 150px; }
+      .app .app__profile__bottom__content__left__boxes div h6 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 15px; }
+      .app .app__profile__bottom__content__left__boxes div span {
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.2rem; }
+  .app .app__profile__bottom__content__left h3 {
+    color: #858584;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    padding: 11px 0 20px 0; }
+  .app .app__profile__bottom__content__left p {
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+    padding-bottom: 30px;
+    color: white; }
+  .app .app__profile__bottom__content__left .app__footer__content__right__icon--modifier {
+    width: 194px;
+    display: flex;
+    justify-content: space-between; }
+
+.app .app__profile__groops {
+  border-top: 1px solid #3B3B3B;
+  margin-top: 30px; }
+  .app .app__profile__groops__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; }
+    .app .app__profile__groops__content div {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.4rem;
+      font-family: "Work Sans", sans-serif;
+      color: white;
+      width: 350px;
+      position: relative;
+      padding: 15px;
+      transition: .4s; }
+      .app .app__profile__groops__content div div {
+        background-color: #3B3B3B;
+        border-radius: 50%;
+        font-weight: 400;
+        font-family: "Space Mono", sans-serif;
+        padding: 10px 12px;
+        width: fit-content;
+        margin-left: 18px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s; }
+      .app .app__profile__groops__content div:hover {
+        cursor: pointer; }
+        .app .app__profile__groops__content div:hover div {
+          background-color: #858584;
+          transition: .4s; }
+        .app .app__profile__groops__content div:hover::after {
+          content: " ";
+          height: 2px;
+          background-color: #858584;
+          width: 100%;
+          position: absolute;
+          bottom: 0px;
+          transition: .4s; }
+
+@media screen and (max-width: 834px) {
+  .app__profile__top {
+    width: 100%; }
+  .app__profile__bottom__content h1 {
+    margin-bottom: 30px; }
+  .app__profile__bottom__content__top {
+    flex-direction: column;
+    align-items: flex-start !important; }
+    .app__profile__bottom__content__top h1 {
+      font-size: 4.2rem !important; }
+    .app__profile__bottom__content__top div button {
+      font-size: 1.8rem !important; }
+      .app__profile__bottom__content__top div button:first-child {
+        padding: 19px 20px !important; }
+      .app__profile__bottom__content__top div button:last-child {
+        padding: 19px 30px !important;
+        margin: 0 !important; }
+  .app__profile__bottom__content__left {
+    width: fit-content !important;
+    font-size: 2rem !important; }
+    .app__profile__bottom__content__left__boxes div {
+      width: 490px !important; }
+      .app__profile__bottom__content__left__boxes div h6 {
+        font-size: 2.8rem !important; }
+      .app__profile__bottom__content__left__boxes div span {
+        font-size: 2rem !important; }
+  .app__profile__groops__content div {
+    font-size: 2rem !important;
+    width: fit-content !important; }
+  .app .app__footer__content {
+    display: flex;
+    flex-direction: column; }
+    .app .app__footer__content__right {
+      width: 100% !important; }
+      .app .app__footer__content__right p {
+        font-size: 1.9rem;
+        width: 100% !important; }
+      .app .app__footer__content__right__text {
+        padding: 20px 0 20px 0; }
+    .app .app__footer__content__middle h4 {
+      font-size: 3rem;
+      margin-top: 30px; }
+    .app .app__footer__content__left {
+      width: 100%; }
+      .app .app__footer__content__left h4 {
+        font-size: 3rem;
+        margin-top: 30px; }
+      .app .app__footer__content__left p {
+        width: 100%; }
+      .app .app__footer__content__left div {
+        width: 350px !important; }
+        .app .app__footer__content__left div [placeholder~="email"] {
+          font-size: 1.5rem; }
+        .app .app__footer__content__left div button {
+          font-size: 1.8rem; }
+  .app .app__footer__bottom span {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 375px) {
+  .app__profile__top {
+    height: 230px !important;
+    width: 100%;
+    overflow: hidden; }
+    .app__profile__top img {
+      width: 100%;
+      height: -webkit-fill-available; }
+      .app__profile__top img:first-child {
+        display: none; }
+    .app__profile__top .app__profile__top__respimg {
+      display: block !important; }
+  .app__profile__bottom .app__profile__bottom__avatar {
+    transform: translate(95px, -50%) !important;
+    width: 40% !important;
+    display: block !important; }
+  .app__profile__bottom__content h1 {
+    margin-bottom: 30px; }
+  .app__profile__bottom__content__top {
+    flex-direction: column; }
+    .app__profile__bottom__content__top h1 {
+      font-size: 5.4rem !important; }
+    .app__profile__bottom__content__top div {
+      flex-direction: column;
+      width: 100% !important; }
+      .app__profile__bottom__content__top div button {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        font-size: 3.3rem !important;
+        margin: 0 !important; }
+        .app__profile__bottom__content__top div button:first-child {
+          margin-bottom: 20px !important; }
+  .app__profile__bottom__content__left {
+    width: auto !important;
+    font-size: 2.5rem !important; }
+    .app__profile__bottom__content__left__boxes {
+      width: 310px !important; }
+      .app__profile__bottom__content__left__boxes div h6 {
+        font-size: 4.4rem !important;
+        margin-bottom: 5px !important; }
+      .app__profile__bottom__content__left__boxes div span {
+        font-size: 2.5rem !important; }
+  .app__profile__groops__content div {
+    font-size: 2.5rem !important;
+    width: fit-content !important; }
+    .app__profile__groops__content div div {
+      display: none !important; }
+  .app .app__footer__content {
+    display: flex;
+    flex-direction: column; }
+    .app .app__footer__content__right {
+      width: 100%; }
+      .app .app__footer__content__right p {
+        font-size: 1.9rem;
+        width: 100%; }
+      .app .app__footer__content__right__text {
+        padding: 20px 0 20px 0; }
+    .app .app__footer__content__middle h4 {
+      font-size: 3rem;
+      margin-top: 30px; }
+    .app .app__footer__content__left {
+      width: 100%; }
+      .app .app__footer__content__left h4 {
+        font-size: 3rem;
+        margin-top: 30px; }
+      .app .app__footer__content__left p {
+        width: 100%; }
+      .app .app__footer__content__left div {
+        flex-direction: column;
+        background: none;
+        align-items: center;
+        width: 100% !important; }
+        .app .app__footer__content__left div [placeholder~="email"] {
+          font-size: 2.5rem;
+          padding: 12px 102px 12px 20px;
+          border-radius: 50px;
+          width: -webkit-fill-available; }
+        .app .app__footer__content__left div button {
+          margin-top: 16px;
+          font-size: 1.8rem;
+          width: 100%;
+          padding: 12px 102px;
+          border-radius: 50px; }
+          .app .app__footer__content__left div button img {
+            display: flex;
+            padding-right: 5px; }
+  .app .app__footer__bottom span {
+    font-size: 1.8rem; } }

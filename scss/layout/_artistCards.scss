@@ -1,0 +1,145 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    cursor: pointer;
+
+    &__item {
+        width: 330px;
+        height: 462px;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: .4s;
+
+        &__header {
+            width: 330px;
+            height: 296px;
+            transition: .4s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: .4s;
+            }
+        }
+
+        &__footer {
+            background-color: #3B3B3B;
+            width: 330px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            &__top {
+                width: 270px;
+                padding-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 30.8px;
+                    color: white;
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    margin-bottom: 5px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22.4px;
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    color: white;
+                    margin-left: 10px;
+                }
+            }
+
+            &__end {
+                width: 270px;
+                display: flex;
+                margin-top: 25px;
+                padding-bottom: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-between;
+
+                &__left {
+
+                    h6 {
+                        font-family: 'Space Mono';
+                        font-family: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 110%;
+                        color: #858584;
+                        margin-bottom: 8px;
+
+                    }
+
+                    p {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: white;
+                    }
+                }
+
+                &__right {
+
+                    h6 {
+                        font-family: 'Space Mono';
+                        font-family: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 110%;
+                        color: #858584;
+                        margin-bottom: 8px;
+
+                    }
+
+                    p {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+
+        &:hover {
+            box-shadow: 0 0 20px #707070;
+            transition: .4s;
+        }
+    }
+}
+
+@include for-size(tablet){
+
+}
+
+@include for-size(mobile){
+#artistCards{
+    .cards{
+        display: flex;
+        justify-content: center;
+        &__item{
+            width: 315px;
+        }
+    }
+}
+}

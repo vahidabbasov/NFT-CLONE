@@ -1,0 +1,35 @@
+@mixin for-size($size) {
+    @if($size==mobile) {
+        @media screen and(max-width: map-get($screen-size, 'sm')) {
+            @content;
+        }
+    }
+
+    @else if($size==tablet) {
+        @media screen and(max-width: map-get($screen-size, 'md')) {
+            @content;
+        }
+    }
+}
+
+
+
+@mixin buttons($bg-color, $border, $border-color, $text-color, $font-size: 1rem) {
+    padding: 19px 50px;
+    border-radius: 20px;
+    background-color: $bg-color;
+    border: $border solid $border-color;
+    color: $text-color;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .6s;
+    font-size: $font-size;
+    &:hover{
+        transform: scale(1.1);
+        transition: .6s;
+    }
+}
